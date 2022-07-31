@@ -1,0 +1,12 @@
+type: fields
+fields:
+  cookie-headline:
+    label: Cookie Consent
+    type: headline
+    numbered: false
+  cookieTitle:
+    type: text
+    label: Cookie Title
+  cookieBody:
+    type: textarea
+    label: Cookie Body

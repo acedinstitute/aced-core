@@ -1,0 +1,7 @@
+label: Meta Data
+icon: list-bullet
+columns: 
+  main:
+    sections:
+      meta:
+        extends: core/sections/meta 

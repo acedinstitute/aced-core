@@ -1,0 +1,7 @@
+tabs:
+  content:
+    extends: core/tabs/content
+  media:
+    extends: core/tabs/media
+  meta:
+    extends: core/tabs/meta

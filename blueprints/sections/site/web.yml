@@ -1,0 +1,17 @@
+type: fields
+fields:
+  web-headline:
+    label: Web
+    type: headline
+    numbered: false
+  e-mail:
+    label: E-mail
+    type: email
+    placeholder: username@aced.site
+    width: 1/2
+  website:
+    label: Website
+    type: url
+    icon: globe
+    placeholder: https://www.awesome-website.com
+    width: 1/2

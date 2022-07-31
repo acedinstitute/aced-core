@@ -1,0 +1,10 @@
+title: PDF
+accept:
+  mime: application/pdf
+
+fields:
+  title:
+    label: Title
+    type: text
+    required: true
+    

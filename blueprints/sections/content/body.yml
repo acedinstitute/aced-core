@@ -1,0 +1,13 @@
+type: fields
+fields:
+  contentBody:
+    label: Content Body
+    type: blocks
+    fieldsets:
+      - heading
+      - text
+      - list
+      - image
+      - video
+      - markdown
+      - button

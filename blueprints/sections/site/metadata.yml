@@ -1,0 +1,32 @@
+type: fields 
+fields:
+  sitemeta-headline:
+    label: Site Meta Data
+    type: headline
+    numbered: false
+  description:
+    label: Site Description
+    type: text
+    maxlength: 155
+    required: false
+    help: This description is used as part of the website's metadata it is used by search engines, social media platforms and other webcrawlers.
+  subtitle:
+    label: Site Subtitle
+    type: text
+    required: false
+    width: 1/3
+  author:
+    label: Site author
+    type: text
+    help: The site author is used as part of the website's metadata. It is used by search engines, social media platforms and other webcrawlers.
+    width: 1/3
+  contentRating:
+    label: Site Content Rating
+    type: select
+    options:
+      general: General
+      mature: Mature
+      restricted: Restricted
+      safeforkids: Safe for Kids
+      overFourteen: 14 years
+    width: 1/3

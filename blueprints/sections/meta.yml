@@ -1,0 +1,19 @@
+type: fields
+fields:
+  pageDescription:
+    label: Page Description
+    type: text
+    width: 2/3
+    maxlength: 155
+    help: This description is used in the meta data of the page and on social media platforms.
+  socialImage:
+    label: Social Media Image
+    type: files
+    width: 1/3
+    help: Select or upload an image that is used when sharing this item on social media.
+    template: image
+    layout: cards
+    uploads: image
+    max: 1
+    image:
+      ratio: 1/1

@@ -1,0 +1,5 @@
+label: Media
+icon: image
+sections:
+  media:
+    extends: core/sections/media

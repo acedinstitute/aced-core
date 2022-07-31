@@ -1,0 +1,7 @@
+label: Site Meta data
+icon: settings
+sections:
+  metadata: core/sections/site/metadata
+  cookie: core/sections/site/cookie
+  web: core/sections/site/web
+  social: core/sections/site/social

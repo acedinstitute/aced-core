@@ -1,0 +1,25 @@
+type: fields
+fields:
+  headersize:
+    label: Header Size
+    type: radio
+    default: large
+    options:
+      large: Large
+      small: Small    
+  date:
+    label: Date
+    type: date
+    required: true
+    translate: false
+  tags:
+    label: Tags
+    type: tags
+  author:
+    label: Author
+    type: users
+    empty: please select an author
+    required: false
+    multiple: false
+    subpages: false
+    translate: false

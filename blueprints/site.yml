@@ -1,0 +1,27 @@
+unlisted: true
+# tabs
+tabs:
+  # main 
+  main: 
+    icon: page
+    label: Site Pages
+    columns: 
+      left:
+        sections:
+          homepage:
+            headline: Home Page
+            type: pages
+            template: home
+            status: unlisted
+          sitesections:
+            headline: Site Sections
+            type: pages
+            status: listed
+        width: 2/3
+      right:
+        sections:
+          miscelaneous: core/sections/site/miscelaneous
+          system: core/sections/site/system
+        width: 1/3
+  # meta
+  meta: core/tabs/site/metadata

@@ -1,0 +1,8 @@
+headline: Miscelaneous Pages
+type: pages
+status: unlisted
+template: 
+  - default
+  - embed
+  - search
+  - store

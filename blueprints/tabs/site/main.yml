@@ -1,0 +1,32 @@
+label: Site Pages
+columns: 
+  left:
+    sections:
+      homepage:
+        headline: Home Page
+        type: pages
+        template: home
+        status: unlisted
+      sitesections:
+        headline: Site Sections
+        type: pages
+        status: listed
+    width: 2/3
+  right:
+    sections:
+      miscelaneouspages:
+        headline: Miscelaneous Pages
+        type: pages
+        status: unlisted
+        template: 
+          - default
+          - embed
+          - search
+          - store
+      systempages:
+        headline: System Pages
+        type: pages
+        status: unlisted
+        template:
+          - erro
+    width: 1/3
