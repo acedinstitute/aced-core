@@ -40,6 +40,8 @@ Kirby::plugin('acedinstitute/aced-core', [
         'core/head/social/twitter-card' => __DIR__ . '/snippets/core/head/social/twitter-card.php',
         'core/head/link-rel' => __DIR__ . '/snippets/core/head/link-rel.php',
         'core/head/favicon' => __DIR__ . '/snippets/core/head/favicon.php',
+        'core/site/sitemap' => __DIR__ . '/snippets/core/site/sitemap.php',
+
     ],
 
     /**
@@ -111,4 +113,32 @@ Kirby::plugin('acedinstitute/aced-core', [
      */
     'fieldMethods' => [
     ],
+    'routes' => [
+        /**
+		 * /sitemap.xml
+		 */
+		[
+			'pattern' => 'sitemap.xml',
+			'action'  => function() {
+				$pages = site()->pages()->index();
+
+				// fetch the pages to ignore from the config settings,
+				$ignore = kirby()->option('sitemap.ignore', ['error']);
+				$content = snippet('core/site/sitemap', compact('pages', 'ignore'), true);
+			
+				// return response with correct header type
+				return new Kirby\Cms\Response($content, 'application/xml');
+			}
+		],
+		/**
+		 * /sitemap - redirects user to /sitemap.xml
+		 */
+		[
+			'pattern' => 'sitemap',
+			'action'  => function() {
+				return go('sitemap.xml', 301);
+			}
+		],
+
+    ]
 ]);
